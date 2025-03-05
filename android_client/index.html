@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Control - Android</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Media Control Panel (Android)</h2>
+    <!-- Connection status -->
+    <div class="status" id="status">Connecting...</div>
+    <!-- Area for server responses -->
+    <div class="response" id="response">Awaiting command...</div>
+    <div class="buttons">
+      <button onclick="sendCommand('play')">Play</button>
+      <button onclick="sendCommand('pause')">Pause</button>
+      <button onclick="sendCommand('next')">Next</button>
+      <button onclick="sendCommand('prev')">Previous</button>
+      <button onclick="sendCommand('volume_up')">Volume Up</button>
+      <button onclick="sendCommand('volume_down')">Volume Down</button>
+      <button onclick="sendCommand('mute')">Mute</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

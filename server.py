@@ -90,6 +90,7 @@ async def handle_connection(websocket, path=None):
         print("Error in connection:", e)
     finally:
         await unregister_client(websocket)
+        
 
 # Main function to start the WebSocket server.
 async def main():

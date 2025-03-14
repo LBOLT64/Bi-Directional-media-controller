@@ -3,7 +3,7 @@ const statusEl = document.getElementById("status");
 const responseEl = document.getElementById("response");
 
 // Replace the IP address with your PC's IP.
-const ws = new WebSocket("ws://192.168.73.82:8765");
+const ws = new WebSocket("ws://192.168.0.190:8765");
 
 ws.onopen = () => {
   console.log("Connected to WebSocket server");
